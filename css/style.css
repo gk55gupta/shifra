@@ -1,0 +1,129 @@
+
+@font-face {
+    font-family: 'clan-book';
+    src: url('../fonts/clan-book.ttf');
+    /* IE9 Compat Modes */
+}
+
+@font-face {
+    font-family: 'clan-med';
+    src: url('../fonts/clan-med.ttf');
+    /* IE9 Compat Modes */
+}
+
+* {
+    font-family: clan-book;
+}
+header{
+    background-color:#eeefef;   
+}
+.rel{
+    position: relative;
+}
+.abs{
+    position: absolute;
+}
+
+.header-icon{
+    top: 40px;
+    right: 0;
+}
+.header-icon a{
+    text-decoration: none !important;
+}
+.header-icon img{
+    margin:0 10px;
+}
+.logo {
+    margin: 0 auto;
+    width: 135px;
+    z-index: 9999 !important;
+}
+
+
+/* Navbar style */
+.nav-container {
+    display: block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+   padding: 15px 0;
+}
+
+.myNav {
+    display: block;
+    margin: 0;
+    background: url(../images/menu-bg.jpg) no-repeat;
+    width: 100%;
+    min-height: unset;
+    border: 0;
+    border-radius: 0;
+}
+
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+.navbar-nav > li {
+    padding: 11px 0;
+    float: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.myNav li a{
+    background: transparent !important;
+    color: #fff;
+    border-right: 1px solid #fff;
+    line-height: 14px;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: left;
+}
+/* class for active link on navbar */
+.myNav li:hover, .myNav li:focus{
+    background-color: #eeefef;
+}
+
+
+.myNav .navbar-nav .last-item{
+    border-right: none;
+}
+.navbar-toggle{
+    margin: 5px;
+    margin-right: 10px;
+    border: 1px solid white;
+}
+.navbar-toggle .icon-bar{
+   background-color: white;
+}
+
+.border-right{
+    border-right: 1px solid #ddd;
+}
+
+@media (max-width:767px){
+    .navbar-nav > li {
+        display: block;
+    }
+    .navbar-collapse{
+        background: linear-gradient(to right, #2591d1, #e53981);
+        border: 0px;
+    }
+    .navbar-collapse li > a{
+        padding: 10px;
+        border: 0;
+    }
+}
+
+@media (max-width:500px){
+    .nav-container{
+        text-align: initial;
+    }
+    .logo{
+        width: 120px;
+    }
+}
