@@ -2,137 +2,167 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
-	    <meta charset="utf-8">
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Shifra</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 
-		<!-- Plugin css -->
-		<link rel="stylesheet" href="css/jquery.animateSlider.css">
-		<!-- Demo css -->		
-	    <link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/demo1.css">
-		<link rel="stylesheet" href="css/style.css">
-        
-        <style>
-        	@font-face {
-			  font-family: 'clan-book';
-			  src: url('fonts/clan-book.ttf'); /* IE9 Compat Modes */
-			}
-			@font-face {
-			  font-family: 'clan-med';
-			  src: url('fonts/clan-med.ttf'); /* IE9 Compat Modes */
-			}
-			*{
-				font-family: clan-book;
-			}
-			.hdrLogoDiv{
-				display:block;
-				position:relative;				
-				width:100%;
-				text-align:center;
-			}
-			.hdrLogo{
-				margin:0 auto;
-				width:120px;
-				z-index:9999 !important;
-			}
-			.hdrMenu{
-				display:block;
-				position:absolute;
-				clear:both;	
-				margin:10px 0;
-				height:40px;
-				background:#fff url(images/hdr-menu-bg.jpg) left bottom repeat-x;
-				width:100%;
-			}
-			.hdrMenu ul{
-				margin:0;
-				padding:10px 0;	
-			}
-			.hdrMenu li{
-				color:#fff;
-				border-right:1px solid #fff;
-				line-height:14px;	
-				padding:0 15px;
-			}
-			.hdrMenu li:last-child{
-				padding-right:0;
-				border-right:none;	
-			}
-		</style>
-        
-	</head>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- <link rel="shortcut icon" href="favicon.ico" /> -->
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Shifra</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-    <body>
-    
-    <div class="hdrLogoDiv">
-    	<img src="images/logo.png" class="hdrLogo" alt="shifra" />
-    </div>
-	<div class="hdrMenu">
-    	<div class="container">
-        	<ul class="list-inline text-center">
-                <li>HOME</li>
-                <li>PEDIGREE</li>
-                <li>PRODUCTS</li>
-                <li>WHY SHIFRAA?</li>
-                <li>GREEN STORY</li>
-                <li>STORE LOCATOR</li>
-                <li>CONTACT US</li>
-            </ul>
-        </div>
-    </div>
+	<!-- Plugin css -->
+	<link rel="stylesheet" href="css/jquery.animateSlider.css">
+	<!-- Demo css -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/demo1.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="nav-container">
+				<a href="#">
+					<img src="images/logo.png" class="logo" alt="shifra">
+				</a>
+				<div class="abs header-icon">
+					<a href="#">
+						<img src="images/cart-icon.png" alt="cart-icon" style="width: 28px;">
+					</a>
+					<div class="notification-div rel">
+						<a class="notification-icon" href="#" class="">
+						<img src="images/bell-icon.png" alt="bell-icon" style="width: 22px;"></a>
+						
+						<div class="abs notification">
+								<span class="triangle"></span>
+						</div>
+					</div>	
+					<!-- <div class=" rel"> -->
+					<a href="#">
+						<img src="images/search-icon.png" alt="search-icon" style="width: 25px;"></a>
+						<!-- <input class="abs form-control col-sm-6" placeholder="Search Here" > -->
+					<!-- </div>	 -->
+				</div>
+			</div>
+		</div>
+		<nav class="navbar myNav">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+					 aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-center">
+						<li class=""><a href="index.html">HOME<span class="sr-only">(current)</span></a></li>
+						<span style="color: white">|</span>
+						<li class=""><a href="#">PEDIGREE</a></li>
+						<span style="color: white">|</span>
+						<li class=""><a href="#">WHY SHIFRAA?</a></li>
+						<span style="color: white">|</span>
+						<li class=""><a href="#">PRODUCTS</a></li>
+						<span style="color: white">|</span>
+						<!-- <li class="">
+							<a href="#">GREEN STORY
+			
+							</a>
+						</li>
+						<li class="">
+							<a href="#">STORE LOCATOR
+			
+							</a>
+						</li> -->
+						<li><a href="contact-us.html" class="last-item">CONTACT US</a></li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+		</nav>
+	</header>
 	<div class="container">
-    
-    	<ul class="anim-slider">
-            <!-- Slide No2 -->
-            <li class="anim-slide">
-                
-                <img id="rotate" style="left:15%; width:75%; margin-top:-10%;" src="images/slider/flower-1.png" alt="shifra" />
-                <img id="fadeDown" style="left:18%; bottom:8%;" class="img-responsive" src="images/slider/girl-1.png" alt="shifra" />
-                <img id="bounceRight" style="right:17%; bottom:8%" class="" src="images/slider/girl-2.png" alt="shifra" />
-                <div id="bounce" style="width:30%; border-radius:50%; font-size:36px; text-align:center; margin-top:12%; left:33%;">The <span style="color:#9f1f63;position: relative;font-family: clan-med;">reach</span><span style="color:#00a651;position: relative;font-family: clan-med;">swirl</span><br/><span style="color:#ee2b7b;position: relative;font-family: clan-med;">pull</span><span style="color:#0072bc;position: relative;font-family: clan-med;">extend</span><br/>Churidhar leggings</div>
-                <div id="bounceUp" style="width:30%; border-radius:50%; font-size:16px; margin-top:25%; position:relative; text-align:center; left:33%;">Built for action! Our garments celebrate woman in her different moods, sizes, activities and passions. Come on, jumpstretchreach for your Shifraa fashion wear today!</div>
-            
-            </li>
-    
-            <!-- Slide No3 -->
-            <li class="anim-slide">
-                <img id="rotate2" style="left:15%; width:75%; margin-top:-10%;" src="images/slider/flower-2.png" alt="shifra" />
-                <img id="fadeDown2" style="left:10%; bottom:8%;" class="img-responsive" src="images/slider/girl-3.png" alt="shifra" />
-                <img id="bounceRight2" style="right:20%; bottom:8%" class="" src="images/slider/girl-4.png" alt="shifra" />
-                <div id="bounce2" style="width:30%; border-radius:50%; font-size:36px; text-align:center; margin-top:12%; left:33%;">The <span style="color:#662d91;position: relative;font-family: clan-med;">stretch</span><span style="color:#00a651;position: relative;font-family: clan-med;">lift</span><br/><span style="color:#f7941d;position: relative;font-family: clan-med;">reach</span><span style="color:#ec008c;position: relative;font-family: clan-med;">flex</span><br/>Ankle leggings</div>
-                <div id="bounceUp2" style="width:30%; border-radius:50%; font-size:16px; margin-top:25%; position:relative; text-align:center; left:33%;">Built for action! Our garments celebrate woman in her different moods, sizes, activities and passions. Come on, jumpstretchreach for your Shifraa fashion wear today!</div>
-            </li>
-            
-            
-            <li class="anim-slide">
-                <img id="rotate3" style="left:15%; width:75%; margin-top:-10%;" src="images/slider/flower-3.png" alt="shifra" />
-                <img id="fadeDown3" style="left:10%; bottom:8%;" class="img-responsive" src="images/slider/girl-5.png" alt="shifra" />
-                <img id="bounceRight3" style="right:20%; bottom:8%" class="" src="images/slider/girl-6.png" alt="shifra" />
-                <div id="bounce3" style="width:30%; border-radius:50%; font-size:36px; text-align:center; margin-top:12%; left:33%;">The <span style="color:#ed1c24;position: relative;font-family: clan-med;">swish</span><span style="color:#0072bc;position: relative;font-family: clan-med;">twirl</span><br/><span style="color:#00a651;position: relative;font-family: clan-med;">flaunt</span><span style="color:#f7941d;position: relative;font-family: clan-med;">glide</span><br/>Palazzos</div>
-                <div id="bounceUp3" style="width:30%; border-radius:50%; font-size:16px; margin-top:25%; position:relative; text-align:center; left:33%;">Built for action! Our garments celebrate woman in her different moods, sizes, activities and passions. Come on, jumpstretchreach for your Shifraa fashion wear today!</div>
-            </li>
 
-    
-            <!-- Arrows -->
-            <nav class="anim-arrows">
-                <span class="anim-arrows-prev"></span>
-                <span class="anim-arrows-next"></span>
-            </nav>
-            <!-- Dynamically created dots -->
-            
-        </ul>
-    
-    </div>
-    
-		<!-- Bower Depedencies -->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/modernizr.js"></script>	
-		<!-- Load the plugin -->
-		<script src="js/jquery.animateSlider.js"></script>
-		<script src="js/animation.js"></script>
-    </body>
+		<ul class="anim-slider">
+			<!-- Slide No2 -->
+			<li class="anim-slide">
+
+				<img id="rotate" style="left:15%; width:75%; margin-top:-10%;" src="images/slider/flower-1.png" alt="shifra" />
+				<img id="fadeDown" style="left:18%; bottom:8%;" class="img-responsive" src="images/slider/girl-1.png" alt="shifra" />
+				<img id="bounceRight" style="right:17%; bottom:8%" class="" src="images/slider/girl-2.png" alt="shifra" />
+				<div id="bounce" style="width:30%; border-radius:50%; font-size:36px; text-align:center; margin-top:12%; left:33%;">The
+					<span style="color:#9f1f63;position: relative;font-family: clan-med;">reach</span>
+					<span style="color:#00a651;position: relative;font-family: clan-med;">swirl</span>
+					<br/>
+					<span style="color:#ee2b7b;position: relative;font-family: clan-med;">pull</span>
+					<span style="color:#0072bc;position: relative;font-family: clan-med;">extend</span>
+					<br/>Churidhar leggings</div>
+				<div id="bounceUp" style="width:30%; border-radius:50%; font-size:16px; margin-top:25%; position:relative; text-align:center; left:33%;">Built for action! Our garments celebrate woman in her different moods, sizes, activities and passions. Come on, jumpstretchreach
+					for your Shifraa fashion wear today!</div>
+
+			</li>
+
+			<!-- Slide No3 -->
+			<li class="anim-slide">
+				<img id="rotate2" style="left:15%; width:75%; margin-top:-10%;" src="images/slider/flower-2.png" alt="shifra" />
+				<img id="fadeDown2" style="left:10%; bottom:8%;" class="img-responsive" src="images/slider/girl-3.png" alt="shifra" />
+				<img id="bounceRight2" style="right:20%; bottom:8%" class="" src="images/slider/girl-4.png" alt="shifra" />
+				<div id="bounce2" style="width:30%; border-radius:50%; font-size:36px; text-align:center; margin-top:12%; left:33%;">The
+					<span style="color:#662d91;position: relative;font-family: clan-med;">stretch</span>
+					<span style="color:#00a651;position: relative;font-family: clan-med;">lift</span>
+					<br/>
+					<span style="color:#f7941d;position: relative;font-family: clan-med;">reach</span>
+					<span style="color:#ec008c;position: relative;font-family: clan-med;">flex</span>
+					<br/>Ankle leggings</div>
+				<div id="bounceUp2" style="width:30%; border-radius:50%; font-size:16px; margin-top:25%; position:relative; text-align:center; left:33%;">Built for action! Our garments celebrate woman in her different moods, sizes, activities and passions. Come on, jumpstretchreach
+					for your Shifraa fashion wear today!</div>
+			</li>
+
+
+			<li class="anim-slide">
+				<img id="rotate3" style="left:15%; width:75%; margin-top:-10%;" src="images/slider/flower-3.png" alt="shifra" />
+				<img id="fadeDown3" style="left:10%; bottom:8%;" class="img-responsive" src="images/slider/girl-5.png" alt="shifra" />
+				<img id="bounceRight3" style="right:20%; bottom:8%" class="" src="images/slider/girl-6.png" alt="shifra" />
+				<div id="bounce3" style="width:30%; border-radius:50%; font-size:36px; text-align:center; margin-top:12%; left:33%;">The
+					<span style="color:#ed1c24;position: relative;font-family: clan-med;">swish</span>
+					<span style="color:#0072bc;position: relative;font-family: clan-med;">twirl</span>
+					<br/>
+					<span style="color:#00a651;position: relative;font-family: clan-med;">flaunt</span>
+					<span style="color:#f7941d;position: relative;font-family: clan-med;">glide</span>
+					<br/>Palazzos</div>
+				<div id="bounceUp3" style="width:30%; border-radius:50%; font-size:16px; margin-top:25%; position:relative; text-align:center; left:33%;">Built for action! Our garments celebrate woman in her different moods, sizes, activities and passions. Come on, jumpstretchreach
+					for your Shifraa fashion wear today!</div>
+			</li>
+
+
+			<!-- Arrows -->
+			<nav class="anim-arrows">
+				<span class="anim-arrows-prev"></span>
+				<span class="anim-arrows-next"></span>
+			</nav>
+			<!-- Dynamically created dots -->
+
+		</ul>
+
+	</div>
+
+	<!-- Bower Depedencies -->
+	<script src="js/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+	crossorigin="anonymous"></script>
+	<script src="js/modernizr.js"></script>
+	<!-- Load the plugin -->
+	<script src="js/jquery.animateSlider.js"></script>
+	<script src="js/animation.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+
 </html>

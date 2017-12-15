@@ -1,6 +1,4 @@
-*{
-    outline: 0 !important;
-}
+
 a{
     text-decoration: none !important;
 }
@@ -9,7 +7,7 @@ a{
     height: 81vh;
 }
 .btn-default {
-    padding: 12px 22px;
+    padding: 9px 22px;
     border-radius: 0;
 }
 .contact-form{

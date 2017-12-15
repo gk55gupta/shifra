@@ -13,6 +13,7 @@
 
 * {
     font-family: clan-book;
+    outline: 0 !important;
 }
 header{
     background-color:#eeefef;   
@@ -39,6 +40,33 @@ header{
     width: 135px;
     z-index: 9999 !important;
 }
+.notification-div{
+    display: inline-block;
+}
+.triangle{
+    position: absolute;
+    top: -8px;
+    right: 15px;
+    height: 15px;
+    width: 15px;
+    border-radius: 6px 0px 0px 0px;
+    transform: rotate(45deg);
+    background: #eeefef;
+    border-top: 1px solid #cacaca;
+    border-left: 1px solid #cacaca;
+}
+.notification{
+    display: none;
+    top: 45px;
+    right: -2px;
+    width: 280px;
+    height: 350px;
+    box-shadow: 0px 0px 6px 0px #b1b1b1;
+    border-radius: 3px;
+    z-index: 1111111111111;
+    background-color: #eeefef;
+}
+
 
 
 /* Navbar style */
@@ -58,6 +86,7 @@ header{
     min-height: unset;
     border: 0;
     border-radius: 0;
+    z-index: 111111;
 }
 
 .navbar-nav {
@@ -67,25 +96,25 @@ header{
 }
 
 .navbar-nav > li {
-    padding: 11px 0;
+    padding: 0;
     float: none;
     display: inline-block;
     cursor: pointer;
 }
 
 .myNav li a{
-    background: transparent !important;
+    /* background: transparent !important; */
     color: #fff;
-    border-right: 1px solid #fff;
     line-height: 14px;
-    padding: 0 25px;
+    padding: 13px 25px;
     font-size: 13px;
     font-weight: 600;
     text-align: left;
 }
 /* class for active link on navbar */
-.myNav li:hover, .myNav li:focus{
+.myNav li a:hover, .myNav li a:focus{
     background-color: #eeefef;
+    color: black;
 }
 
 
@@ -108,6 +137,9 @@ header{
 @media (max-width:767px){
     .navbar-nav > li {
         display: block;
+    }
+    .navbar-nav > span {
+        display: none;
     }
     .navbar-collapse{
         background: linear-gradient(to right, #2591d1, #e53981);

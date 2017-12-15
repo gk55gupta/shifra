@@ -1,12 +1,15 @@
 $(function(){
+    $('body').click(function() {
+        $('.notification').hide('500');
+     });
     
+     $('.notification-div').click(function(e){
+        //  console.log(e);
+         e.stopPropagation();
+     });
+    
+     $('.notification-icon').click(function(e) {
+         $('.notification').toggle({},500);
+     });;
 
-    $( ".myNav li" )
-    .mouseenter(function() {
-        // alert('x');
-      $( this ).find( "a" ).css('color','black');
-    })
-    .mouseleave(function() {
-        $( this ).find( "a" ).css('color','white');
-    });
 });

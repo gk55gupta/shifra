@@ -1,7 +1,7 @@
 $(".anim-slider").animateSlider(
     {
-        autoplay	:true,
-        interval	:10000,
+        // autoplay	:true,
+        interval	:1000000000,
         animations 	: 
        {
            //0	: 	//Slide No1
