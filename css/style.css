@@ -46,7 +46,7 @@ header{
 .triangle{
     position: absolute;
     top: -8px;
-    right: 15px;
+    right: 58px;
     height: 15px;
     width: 15px;
     border-radius: 6px 0px 0px 0px;
@@ -57,8 +57,8 @@ header{
 }
 .notification{
     display: none;
-    top: 45px;
-    right: -2px;
+    top: 39px;
+    right: -45px;
     width: 280px;
     height: 350px;
     box-shadow: 0px 0px 6px 0px #b1b1b1;
