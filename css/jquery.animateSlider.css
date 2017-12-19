@@ -8981,3 +8981,14 @@ v90%, 100% {
     transform: translateX(100%) rotate(120deg);
   }
 }
+@media (max-width:1000px){
+  .anim-slider{
+    /* height:70.5vh; */
+  }
+}
+
+@media (max-width: 768px){
+  .anim-slider{
+    /* height:65.5vh; */
+  }
+}
