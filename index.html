@@ -24,7 +24,7 @@
 
 <body>
 	<header>
-
+		
 	</header>
 	<div class="container">
 
@@ -95,23 +95,31 @@
 	<main class="rel">
 		<img class="abs main-bg" src="images/main-bg.png" rel="main-image">
 		<div class="container">
-			<div class="row rel">
+			<div class="row">
 				<h1>CATEGORIES</h1>
 				<div class="col-sm-3">
-					<img class="img-responsive" src="images/girl1.png" alt="categories" style="margin:auto;">
-					<h2 class="abs h2-1">PALAZZOS</h2>
+					<div class="rel">
+						<a href="#"><img class="img-responsive" src="images/girl1.png" alt="categories" style="margin:auto;"></a>
+						<h2 class="abs h2-1">PALAZZOS</h2>
+					</div>
 				</div>
-				<div class="col-sm-3 rel">
-					<img class="img-responsive" src="images/girl2.png" alt="categories" style="margin:auto;">
-					<h2 class="abs h2-2">CHUDIDAR LEGGINGS</h2>
+				<div class="col-sm-3">
+					<div class="rel">
+						<a href="#"><img class="img-responsive" src="images/girl2.png" alt="categories" style="margin:auto;"></a>
+						<h2 class="abs h2-2">CHUDIDAR LEGGINGS</h2>
+					</div>
 				</div>
-				<div class="col-sm-3 rel">
-					<img class="img-responsive" src="images/girl3.png" alt="categories" style="margin:auto;">
-					<h2 class="abs h2-3">ANKLE LEGGINGS</h2>
+				<div class="col-sm-3">
+					<div class="rel">
+						<a href="#"><img class="img-responsive" src="images/girl3.png" alt="categories" style="margin:auto;"></a>
+						<h2 class="abs h2-3">ANKLE LEGGINGS</h2>
+					</div>	
 				</div>
-				<div class="col-sm-3 rel">
-					<img class="img-responsive" src="images/girl4.png" alt="categories" style="margin:auto;">
-					<h2 class="abs h2-4">CAPRIS</h2>
+				<div class="col-sm-3">
+					<div class="rel">
+						<a href="#"><img class="img-responsive" src="images/girl4.png" alt="categories" style="margin:auto;"></a>
+						<h2 class="abs h2-4">CAPRIS</h2>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -122,31 +130,32 @@
 			<h1>TRENDING UPDATES</h1>
 			<p>What's new, our stores, customer speak and announcements</p>
 			<div class="row">
-				<div class="col-sm-4 rel">
-					<img class="img-responsive" src="images/img21.png" alt="image" style="margin:auto;">
-					
+				<div class="col-sm-4">
+					<div class="rel">
+						<a href="#"><img class="img-responsive" src="images/img21.png" alt="image" style="margin:auto;"></a>
 						<h2 class="abs">Latest trends in the legging world</h2>
-					
+					</div>
 				</div>
-				<div class="col-sm-4 rel">
-					<img class="img-responsive" src="images/img22.png" alt="image" style="margin:auto;">
-					
+				<div class="col-sm-4">
+					<div class="rel">	
+						<a href="#"><img class="img-responsive" src="images/img22.png" alt="image" style="margin:auto;"></a>
 						<h2 class="abs">Feel good about your attire</h2>
-					
+					</div>	
 				</div>
-				<div class="col-sm-4 rel">
-					<img class="img-responsive" src="images/img23.png" alt="image" style="margin:auto;">
-					
+				
+				<div class="col-sm-4">
+					<div class="rel">
+						<a href="#"><img class="img-responsive" src="images/img23.png" alt="image" style="margin:auto;"></a>
 						<h2 class="abs">Find your best fit</h2>
-					
+					</div>
 				</div>
-
+				
 			</div>
 		</div>
 	</div>
 	<footer class="container">
 		<ul>
-			<li>&copy; 2017 Shifra  &nbsp; |</li>
+			<li>&copy; 2017 Shifraa  &nbsp; |</li>
 			<li>&nbsp; <a href="#"> Privacy Policy  </a>&nbsp; |</li>
 			<li>&nbsp; <a href="#"> Terms &amp; Conditions  </a>&nbsp; |</li>
 			<li>&nbsp; <a href="#"> News &amp; Events  </a>&nbsp; |</li>
@@ -248,7 +257,7 @@
 					</button>
 				</div>
 
-				Collect the nav links, forms, and other content for toggling
+				
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-center">
 						<li class="">
@@ -257,17 +266,33 @@
 							</a>
 						</li>
 						<span style="color: white">|</span>
-						<li class="">
-							<a href="#">PEDIGREE</a>
-						</li>
+						
+						<li class="dropdown-list">
+							<div class="dropdown">
+								<a class="dropbtn">PEDIGREE</a>
+								<div class="dropdown-content">
+									<a href="#">About Shipra</a>
+									<a href="#">Vision &amp; Mission</a>
+									<a href="#">Green Story</a>
+								</div>
+							</div>
+            			</li>
 						<span style="color: white">|</span>
 						<li class="">
 							<a href="#">WHY SHIFRAA?</a>
 						</li>
 						<span style="color: white">|</span>
-						<li class="">
-							<a href="#">PRODUCTS</a>
-						</li>
+						<li class="dropdown-list">
+							<div class="dropdown">
+								<a id="products-btn" class="dropbtn">PRODUCTS</a>
+								<div id="products" class="dropdown-content">
+									<a href="#">Palazzos</a>
+									<a href="#">Chudidar Leggings</a>
+									<a href="#">Ankle Leggings</a>
+									<a href="#">Capris</a>
+								</div>
+							</div>
+            			</li>
 						<span style="color: white">|</span>
 						<li class="">
 							<a href="#">GREEN STORY
@@ -280,11 +305,11 @@
 							</a>
 						</li>
 						<li>
-							<a href="contact-us.html" class="last-item">CONTACT US</a>
-						</li>
-					</ul>
+								<a href="contact-us.html" class="last-item">CONTACT US</a>
+							</li>
+						</ul>
+					</div>
+					
 				</div>
-				/.navbar-collapse
-			</div>
-		</nav>
+			</nav>
 	-->

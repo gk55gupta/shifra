@@ -173,7 +173,7 @@ header{
 }
 /* class for active link on navbar */
 .myNav li a:hover, .myNav li a:focus{
-    background-color: #eeefef;
+    background-color: #d2d2d2;
     color: black;
 }
 
@@ -189,6 +189,50 @@ header{
 .navbar-toggle .icon-bar{
    background-color: white;
 }
+ .dropbtn {
+    text-decoration: none !important;
+	padding: 13px 12px;
+	border: none;
+	cursor: pointer;
+    text-align: left;
+    display: block;
+	/* width: 130px; */
+}
+
+.myNav li .dropdown {
+	position: relative;
+}
+
+ .myNav li .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #eeefef;
+    color: black;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+    width: 100%;
+    min-width: 167px;
+}
+
+.myNav li .dropdown-content a {
+	color: black;
+	padding: 9px 25px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: #eeefef;
+    color: black;
+}
+
+
+
+/* Navbar style */
 
 .border-right{
     border-right: 1px solid #ddd;
@@ -202,14 +246,18 @@ header{
     width:30%; border-radius:50%; font-size:16px; margin-top:25%; position:relative; text-align:center; left:33%;
 }
 main{
-    padding-top: 100vh;
-    padding-bottom: 40vh;
+    padding-top: 80.7vh;
+    padding-bottom: 18vh;
 
 }
 .main-bg {
-    width: 100%;
     height: 100vh;
+    width: 100%;
     z-index: -1111111111;
+}
+div.rel .container{
+    padding: 0 8%;
+    padding-top: 2.5%;
 }
 
 main h1 {
@@ -221,32 +269,19 @@ main h1 {
 
 
 main h2 {
-    width:220px;
-    bottom: 125px;
-    right: -80px;
     margin: 0;
+    width:0;
+    white-space: nowrap;
+    text-align: left;
+    transform-origin: bottom;
+    margin-top: -40px;
     color: #929496;
-    -ms-transform: rotate(-90deg);
-    /* IE 9 */
-    -webkit-transform: rotate(-90deg);
-    /* Safari 3-8 */
-    transform: rotate(-90deg);
+    right:6%;
+    transform: rotate(270deg);
 }
-/* .h2-1{
-    bottom: 45px;
-right: 0px;
+ .h2-1{
+right: 0%;
 }
-.h2-2{
-    bottom: 100px;
-    right: -60px;
-}
-.h2-3{
-    bottom: 85px;
-    right: -40px;
-}
-.h2-4{
-    right: 15px;
-} */
 
 
 .bg-3 h1{
@@ -254,6 +289,8 @@ right: 0px;
     background: linear-gradient(to right,#e9bed2, #dc70a2, #e9bed2);
     margin: 0;
     margin-bottom: 5px;
+    text-align: center;
+    padding: 10px;
 }
 .bg-3 p{
     text-align: center;
@@ -261,7 +298,7 @@ right: 0px;
     margin-bottom: 20px;
 }
 .bg-3 .img-responsive{
-    width:70%;
+    /* width:85%; */
 }
 
 .bg-3 h2{
@@ -278,10 +315,44 @@ right: 0px;
     border-top-right-radius: 50%;
 }
 
+.rel1{
+    margin: auto;
+    width: fit-content;
+} 
+
+.overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #ffffffab;
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	transition: .2s ease;
+  }
+  
+  .rel1:hover .overlay {
+	height: 8%;
+  }
+  
+  .text {
+    margin-top:12px;
+	white-space: nowrap; 
+	color: black;
+	position: absolute;
+	overflow: hidden;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+  }
+
+
 footer ul{
     list-style-type:none;
     display: block; 
     text-align: center;
+    padding: 0;
 }
 footer ul li{
     display: inline-block;
@@ -316,9 +387,11 @@ footer li a{
         left:31%;
         line-height: 22px;
     }
-    main .img-responsive, .bg-3 .img-responsive {
-        width: 80%;
+    .main-bg {
+        height: initial;
+        background-repeat: no-repeat; 
     }
+    
 }
 
 @media (max-width:1000px){
@@ -327,9 +400,6 @@ footer li a{
     }
     .hero-para{
         margin-top: 28%;
-    }
-    main .img-responsive, .bg-3 .img-responsive {
-        width: 60%;
     }
     
 }
@@ -369,15 +439,22 @@ footer li a{
     .hero-para{
         margin-top: 30%;
     }
-    .h2-1,.h2-2,.h2-3,.h2-4{
-        right: 65px;
-    }
-    .col-sm-3{
-        margin: 20px 15px;
+    .col-sm-3, .col-sm-4{
+        margin: 20px auto;
     }
     main .img-responsive, .bg-3 .img-responsive {
         width: 50%;
     }
+    .dropbtn{
+    padding-left: 10px !important;
+    }
+    .h2-1{
+        right: 25%;
+    }
+    .h2-2,.h2-3,.h2-4{
+        right: 26%;
+    }
+    
 }
 
 @media (max-width:500px){
@@ -393,5 +470,11 @@ footer li a{
     }
     main .img-responsive, .bg-3 .img-responsive {
         width: 80%;
+    }
+    .h2-1{
+        right: 10%;
+    }
+    .h2-2,.h2-3,.h2-4{
+        right: 14%;
     }
 }
