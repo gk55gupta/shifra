@@ -20,6 +20,32 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/demo1.css">
 	<link rel="stylesheet" href="css/style.css">
+	<style>
+		.anim-dots{
+			bottom: 0%;
+			left: -2%;
+		}
+		.rel1{
+			margin:auto;
+			width:fit-content;
+		}
+		.anim-img1{width:12%;left:18%;top:6%;			}
+		.anim-img2{width:14%;right:17%;top:4%;			}
+		.anim-img3{width:22%;left:10%;top:8%;			}
+		.anim-img4{width:12%;right:20%;top:8%;			}
+		.anim-img5{width:20%;left:10%;top:8%;			}
+		.anim-img6{	width:11.2%;right:20%;top:8%;		}
+
+
+		@media (max-width:767px){
+			.anim-img1{width:21%;left:5%;top:8%;			}
+			.anim-img2{width:25%;right:2%;top:5%;			}
+			.anim-img3{width:32%;left:0%;top:10%;			}
+			.anim-img4{width:18%;right:10%;top:10%;			}
+			.anim-img5{width:35%;left:0%;top:10%;			}
+			.anim-img6{	width:19.5%;right:5%;top:10%;		}
+		}
+	</style>
 </head>
 
 <body>
@@ -33,8 +59,8 @@
 			<li class="anim-slide">
 
 				<img class="body-anim-bg" id="rotate" src="images/slider/flower-1.png" alt="shifra" />
-				<img id="fadeDown" style="width: 12%;left:18%; top:5%;" class="img-responsive" src="images/slider/girl-1.png" alt="shifra"/>
-				<img id="bounceRight" style="width:14%; right:17%; top:3%" class="" src="images/slider/girl-2-old.png" alt="shifra" />
+				<img id="fadeDown" class="img-responsive  anim-img1" src="images/slider/girl-1.png" alt="shifra"/>
+				<img id="bounceRight" class="img-responsive anim-img2" src="images/slider/girl-2-old.png" alt="shifra" />
 				<div class="hero-heading" id="bounce">The
 					<span style="color:#9f1f63;position: relative;font-family: clan-med;">reach</span>
 					<span style="color:#00a651;position: relative;font-family: clan-med;">swirl</span>
@@ -50,9 +76,8 @@
 			<!-- Slide No3 -->
 			<li class="anim-slide">
 				<img class="body-anim-bg" id="rotate2" src="images/slider/flower-2.png" alt="shifra" />
-				<img id="fadeDown2" style="width:22%; left:10%; top:5%;" class="img-responsive" src="images/slider/girl-3.png" alt="shifra"
-				/>
-				<img id="bounceRight2" style="width: 12%;right:20%; top:5%" class="" src="images/slider/girl-4.png" alt="shifra" />
+				<img id="fadeDown2" class="img-responsive anim-img3" src="images/slider/girl-3.png" alt="shifra"/>
+				<img id="bounceRight2" class="img-responsive anim-img4" src="images/slider/girl-4.png" alt="shifra" />
 				<div class="hero-heading" id="bounce2">The
 					<span style="color:#662d91;position: relative;font-family: clan-med;">stretch</span>
 					<span style="color:#00a651;position: relative;font-family: clan-med;">lift</span>
@@ -67,9 +92,8 @@
 
 			<li class="anim-slide">
 				<img class="body-anim-bg" id="rotate3" src="images/slider/flower-3.png" alt="shifra" />
-				<img id="fadeDown3" style="width:20%;left:10%; top:5%;" class="img-responsive" src="images/slider/girl-5.png" alt="shifra"
-				/>
-				<img id="bounceRight3" style="width:11.2%;right:20%; top:5%" class="" src="images/slider/girl-6.png" alt="shifra" />
+				<img id="fadeDown3" class="img-responsive anim-img5" src="images/slider/girl-5.png" alt="shifra"/>
+				<img id="bounceRight3" class="img-responsive anim-img6" src="images/slider/girl-6.png" alt="shifra" />
 				<div class="hero-heading" id="bounce3">The
 					<span style="color:#ed1c24;position: relative;font-family: clan-med;">swish</span>
 					<span style="color:#0072bc;position: relative;font-family: clan-med;">twirl</span>
@@ -98,27 +122,27 @@
 			<div class="row">
 				<h1>CATEGORIES</h1>
 				<div class="col-sm-3">
-					<div class="rel">
-						<a href="#"><img class="img-responsive" src="images/girl1.png" alt="categories" style="margin:auto;"></a>
-						<h2 class="abs h2-1">PALAZZOS</h2>
+					<div class="rel rel1">
+						<a href="#"><img class="img-responsive" src="images/girl1.png" alt="categories" style="margin:auto;">
+						<h2 class="abs h2-1">PALAZZOS</h2></a>
 					</div>
 				</div>
 				<div class="col-sm-3">
-					<div class="rel">
-						<a href="#"><img class="img-responsive" src="images/girl2.png" alt="categories" style="margin:auto;"></a>
-						<h2 class="abs h2-2">CHUDIDAR LEGGINGS</h2>
+					<div class="rel rel1">
+						<a href="#"><img class="img-responsive" src="images/girl2.png" alt="categories" style="margin:auto;">
+						<h2 class="abs h2-2">CHUDIDAR LEGGINGS</h2></a>
 					</div>
 				</div>
 				<div class="col-sm-3">
-					<div class="rel">
-						<a href="#"><img class="img-responsive" src="images/girl3.png" alt="categories" style="margin:auto;"></a>
-						<h2 class="abs h2-3">ANKLE LEGGINGS</h2>
+					<div class="rel rel1">
+						<a href="#"><img class="img-responsive" src="images/girl3.png" alt="categories" style="margin:auto;">
+						<h2 class="abs h2-3">ANKLE LEGGINGS</h2></a>
 					</div>	
 				</div>
 				<div class="col-sm-3">
-					<div class="rel">
-						<a href="#"><img class="img-responsive" src="images/girl4.png" alt="categories" style="margin:auto;"></a>
-						<h2 class="abs h2-4">CAPRIS</h2>
+					<div class="rel rel1">
+						<a href="#"><img class="img-responsive" src="images/girl4.png" alt="categories" style="margin:auto;">
+						<h2 class="abs h2-4">CAPRIS</h2></a>
 					</div>
 				</div>
 			</div>
@@ -131,22 +155,22 @@
 			<p>What's new, our stores, customer speak and announcements</p>
 			<div class="row">
 				<div class="col-sm-4">
-					<div class="rel">
-						<a href="#"><img class="img-responsive" src="images/img21.png" alt="image" style="margin:auto;"></a>
-						<h2 class="abs">Latest trends in the legging world</h2>
+					<div class="rel rel1">
+						<a href="#"><img class="img-responsive" src="images/img21.png" alt="image" style="margin:auto;">
+						<h2 class="abs">Latest trends in the legging world</h2></a>
 					</div>
 				</div>
 				<div class="col-sm-4">
-					<div class="rel">	
-						<a href="#"><img class="img-responsive" src="images/img22.png" alt="image" style="margin:auto;"></a>
-						<h2 class="abs">Feel good about your attire</h2>
+					<div class="rel rel1">	
+						<a href="#"><img class="img-responsive" src="images/img22.png" alt="image" style="margin:auto;">
+						<h2 class="abs">Feel good about your attire</h2></a>
 					</div>	
 				</div>
 				
 				<div class="col-sm-4">
-					<div class="rel">
-						<a href="#"><img class="img-responsive" src="images/img23.png" alt="image" style="margin:auto;"></a>
-						<h2 class="abs">Find your best fit</h2>
+					<div class="rel rel1">
+						<a href="#"><img class="img-responsive" src="images/img23.png" alt="image" style="margin:auto;">
+						<h2 class="abs" style="margin-top:-15px;">Find your best fit</h2></a>
 					</div>
 				</div>
 				
