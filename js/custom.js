@@ -54,5 +54,9 @@ $(function(){
             $('.down').attr('src','images/down.png');
         }
     }    
+
+    $('#zoom').click(function(){
+        $('.product-img').addClass('product-img-zoom');
+    })
     // $('.anim-slide > div').addClass('hero-heading'); 
 });
