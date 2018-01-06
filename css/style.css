@@ -467,7 +467,38 @@ footer li a{
     
 }
 
+@media (max-width:594px){
+    .resp-content{
+        background: #8bcbbaad;
+        width: 80%;
+        left: 10%;
+        top: 10%;
+        border-radius: 15px;
+    }
+
+    .hero-heading{
+        width: 100%;
+        font-size: 24px;
+        margin-top: 5%;
+        left: 0;
+        line-height: 25px;
+       
+    }
+
+    .hero-para{
+        padding: 5%;
+        margin-top: 32%;
+        width: 100%;
+        left: 0;
+        font-weight: bold;   
+        color: #333;
+    }
+}
+
 @media (max-width:500px){
+    main {
+        padding-top: 85%;
+    }
     .nav-container{
         text-align: initial;
     }
