@@ -22,11 +22,18 @@
     <link rel="stylesheet" href="css/style.css">
     <style>
         .main-bg{
-            height: 80.4vh;
+            height: 100vh;
         }
         p{
             color: black;
             font-size: 13px;
+        }
+        .pedigree{
+            padding: 10% 0; padding-top:2%;
+        }
+        .pedigree h2{
+            color: white;
+            line-height: 2.5;
         }
         .col-1{
             width: 32%;
@@ -42,6 +49,31 @@
                 width: inherit;
             }
         }
+
+        .width-lg{
+            width: 61%;
+        }
+
+        .width-sm{
+            width: 39%;
+        }
+        p {
+            color: black;
+            font-size: 13px;
+        }
+
+
+        @media (max-width:767px) {
+            .width-lg{
+                width: 100%;
+                margin: auto;
+            }
+            .width-sm{
+                width: 100%;
+            }
+        }
+
+
     </style>
 </head>
 
@@ -52,7 +84,7 @@
 
     <div class="rel">
         <img class="abs main-bg" src="images/bg-about.png" rel="main-image">
-        <div class="container" style="padding:2.5% 15% 0 15%;">
+        <div class="container" style="padding:2.5% 15% 2.5% 15%;">
             <h2 style="color:#888;">PEDIGREE</h2>
             <p>Loyal Textile Mills Ltd is one of the largest composite textile mills in the country. It has a manufacturing capability to produce more than 34,000 tons of yarns annually, 2.25 lacs meter of woven fabrics per day and 100 tons of knit fabrics per day. It is India’s largest exporter of textiles.
             </p>
@@ -78,6 +110,49 @@
                     <img class="img-responsive" src="images/about3-1.png" alt="categories" style="margin:auto;">
                 </div>
             </div>
+        </div>
+    </div>
+
+
+    <div class="rel">
+        <img class="abs main-bg" src="images/bg-pedigree.jpeg" rel="main-image">
+        <div class="container" style="padding:2.5% 15% 0 15%;">
+            <div class="row">
+                <div class="col-sm-5 pedigree">
+                    <h2>OUR CREDO <br>
+                    We single-mindely focus on leveraging technology to deliver aspirational products at an optimal cost, sustainably.</h2>
+                </div>
+                <div class="col-sm-9-offset">
+                </div>
+            </div>
+   
+        </div>
+    </div>
+
+
+    <div class="rel">
+        <img class="abs main-bg" src="images/bg-4.png" rel="main-image">
+        <div class="container" style="padding:2.5% 15% 0 15%;">
+            <div class="row">
+                <div class="col-sm-3">
+                    <img class="img-responsive" src="images/eco.png" alt="eco-friendly">
+                </div>
+                <div class="col-sm-9">
+                    <h2 style="color:#888;margin:0;">A-Z SUSTAINABILITY</h2>
+                    <p>Hey, we know there’s no such thing as being part eco-friendly! So our entire manufacturing process uses 95%
+                        LESS water and 20% LESS energy than others; And, our dyes are Oeko tex certified for environment safety.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top:30px;">
+                <div class="col-sm-8 width-lg">
+                    <img class="img-responsive" src="images/Layer 10.png" alt="categories" style="margin:auto;">
+                </div>
+                <div class="col-sm-4 width-sm">
+                    <img class="img-responsive" src="images/img55.png" alt="categories" style="margin:auto;">
+                </div>
+            </div>    
         </div>
     </div>
 
