@@ -1,6 +1,4 @@
-# shifra
-
-# Freelance Work for clinet
+# shifra ( Freelance Work )
 
 PSD to Front-end html pages ( HTML, css, Bootstrap, Jquery ). 
 
